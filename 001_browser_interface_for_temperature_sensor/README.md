@@ -15,8 +15,17 @@ Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
 
 ## Launching browser interface
 
+How to troubleshoot greyed out serial port:
+
+http://blog.markloiseau.com/2012/05/install-arduino-ubuntu/
+
 ```
-git submodule init
+sudo usermod -a -G dialout USERNAME
+sudo chmod a+rw /dev/ttyACM0
+```
+
+```
+git submodule update
 ```
 
 Start program on Arduino (project at `DHT-sensor-library/examples/DHTtester/`).
