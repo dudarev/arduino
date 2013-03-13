@@ -1,3 +1,10 @@
+## Some links about the sensor
+
+http://www.adafruit.com/products/393
+http://learn.adafruit.com/dht
+http://learn.adafruit.com/dht-humidity-sensing-on-raspberry-pi-with-gdocs-logging
+
+
 ## Setting up hardware
 
 Download arduino from
@@ -12,6 +19,7 @@ Connect pi1n 1 (on the left) of the sensor to +5V
 Connect pin 2 of the sensor to whatever your DHTPIN is
 Connect pin 4 (on the right) of the sensor to GROUND
 Connect a 10K resistor from pin 2 (data) to pin 1 (power) of the sensor
+
 
 ## Launching browser interface
 
