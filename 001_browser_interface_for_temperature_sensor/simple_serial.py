@@ -17,8 +17,11 @@ while True:
     data_raw = s.split(' ')
     f = open('data.json', 'w')
     if len(data_raw) > 3:
-        f.write(json.dumps(
-            {
-                'humidity': float(data_raw[1]),
-                'temperature': float(data_raw[3]),
-            }))
+        try:
+            f.write(json.dumps(
+                {
+                    'humidity': float(data_raw[1]),
+                    'temperature': float(data_raw[3]),
+                }))
+        except ValueError:
+            pass
